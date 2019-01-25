@@ -11,10 +11,27 @@ import UIKit
 class ExerciseListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var viewModel: ExerciseListViewModel!
+    var viewModel: ExerciseListViewModel! {
+        didSet {
+            bindViewModel()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         viewModel = ExerciseListViewModel()
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        tableView.tableFooterView = UIView()
+        
+    }
+    
+    private func bindViewModel() {
+        viewModel.updatedExercises = { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
 
 }
@@ -46,6 +63,15 @@ extension ExerciseListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 135.0
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let currentOffset = scrollView.contentOffset.y
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
+        
+        if maximumOffset - currentOffset <= 10.0 {
+            viewModel.loadNextPage()
+        }
     }
     
 }

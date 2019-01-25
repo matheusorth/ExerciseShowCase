@@ -11,15 +11,15 @@ import Foundation
 struct Exercise: Codable {
     
     let id: Int
-    let licenseAuthor, status, description, name: String
-    let nameOriginal, creationDate, uuid: String
+    let description, name: String
+    let nameOriginal, uuid: String
+    let creationDate: String?
     let license, language, category: Int
     let musclesIds, musclesSecondaryIds, equipmentIds: [Int]
     
     enum CodingKeys: String, CodingKey {
         case id
-        case licenseAuthor = "license_author"
-        case status, description, name
+        case description, name
         case nameOriginal = "name_original"
         case creationDate = "creation_date"
         case uuid, license, category, language

@@ -29,7 +29,7 @@ class ExerciseTableViewCell: UITableViewCell {
         
         let equipments = exercise.equipments?.map({ $0.name }).joined(separator: ", ")
         equipmentsLabel.text = equipments != nil
-            ? String(format: NSLocalizedString("Equipments: %.f", comment: ""), equipments!)
+            ? String(format: NSLocalizedString("Equipments: %@", comment: ""), equipments!)
             : nil
         
 //        guard let imagePath = exercise.imagePath, let imageURL = URL(string: imagePath) else { return }
