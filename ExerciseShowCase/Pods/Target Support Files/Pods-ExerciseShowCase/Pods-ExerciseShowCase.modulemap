@@ -1,0 +1,6 @@
+framework module Pods_ExerciseShowCase {
+  umbrella header "Pods-ExerciseShowCase-umbrella.h"
+
+  export *
+  module * { export * }
+}

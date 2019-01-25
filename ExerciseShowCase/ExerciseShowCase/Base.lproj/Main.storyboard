@@ -101,12 +101,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="areaSizeLabel" destination="j2F-pI-l4Z" id="dBj-5c-UDS"/>
-                                            <outlet property="capitalCityLabel" destination="GgK-gO-sGI" id="Gph-RT-gBp"/>
-                                            <outlet property="downArrowImageView" destination="usb-XG-Ds7" id="QqF-eV-Qvv"/>
-                                            <outlet property="flagImageView" destination="tF9-K0-M2U" id="jWn-Kg-pa4"/>
-                                            <outlet property="nameLabel" destination="dBm-v4-Jfg" id="itg-p7-xgZ"/>
-                                            <outlet property="populationLabel" destination="LKj-WD-Eii" id="IPp-Y1-raS"/>
+                                            <outlet property="categoryLabel" destination="GgK-gO-sGI" id="XFw-Lf-Hos"/>
+                                            <outlet property="downArrowImageView" destination="usb-XG-Ds7" id="QIa-W6-5dB"/>
+                                            <outlet property="equipmentsLabel" destination="j2F-pI-l4Z" id="tNX-86-RsV"/>
+                                            <outlet property="exerciseImageView" destination="tF9-K0-M2U" id="Rec-yn-hnw"/>
+                                            <outlet property="musclesLabel" destination="LKj-WD-Eii" id="kaK-rI-rju"/>
+                                            <outlet property="nameLabel" destination="dBm-v4-Jfg" id="tYm-bq-rQ3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

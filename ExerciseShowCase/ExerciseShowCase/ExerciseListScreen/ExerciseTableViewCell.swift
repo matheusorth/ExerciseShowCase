@@ -15,12 +15,8 @@ class ExerciseTableViewCell: UITableViewCell {
     @IBOutlet weak var downArrowImageView: UIImageView!
     @IBOutlet weak var musclesLabel: UILabel!
     @IBOutlet weak var equipmentsLabel: UILabel!
-    @IBOutlet weak var bottomViewConstraint: NSLayoutConstraint!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.bottomViewConstraint.constant = -1.0
-    }
+
 
     func configure(with exercise: ExerciseListViewModel.ExerciseSimplefied) {
         nameLabel.text = exercise.name
