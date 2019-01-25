@@ -11,6 +11,7 @@ import UIKit
 class ExerciseListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var viewModel: ExerciseListViewModel! {
         didSet {
             bindViewModel()
@@ -31,6 +32,17 @@ class ExerciseListViewController: UIViewController {
     private func bindViewModel() {
         viewModel.updatedExercises = { [weak self] in
             self?.tableView.reloadData()
+        }
+    }
+    
+    // MARK: - Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? ExerciseTableViewCell,
+            let exercise = cell.viewModel?.exercise,
+            let exerciseDetailViewController = segue.destination as? ExerciseDetailTableViewController {
+            // pseudo viewModel inject, better if Swinject. It fail if not set with assert in ExerciseDetailTableViewController.viewDidLoad
+            exerciseDetailViewController.viewModel = ExerciseDetailViewModel(exercise: exercise)
         }
     }
 

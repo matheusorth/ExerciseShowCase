@@ -15,6 +15,7 @@ class ExerciseListViewModel {
         var id: Int
         var category: ExerciseCategory?
         var muscles, musclesSecondary: [Muscle]?
+        var description: String?
         var equipments: [Equipment]?
         
         init(id: Int, name: String) {
@@ -113,6 +114,7 @@ class ExerciseListViewModel {
             newExercise.equipments = equipments.filter({ exercise.equipmentIds.contains($0.id) })
             newExercise.muscles = muscles.filter({ exercise.musclesIds.contains($0.id) })
             newExercise.musclesSecondary = muscles.filter({ exercise.musclesSecondaryIds.contains($0.id) })
+            newExercise.description = exercise.description.removeHTML()
             return ExerciseTableViewCellViewModel(exercise: newExercise)
         })
         
