@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B6FA9B3F2FF74F6E77276EE /* Pods_ExerciseShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA207CDC43D5A8A3A4948A4 /* Pods_ExerciseShowCase.framework */; };
+		302D549221FB513B00A322FD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D549121FB513B00A322FD /* StringExtension.swift */; };
 		30BB6ECB21FB038700EA2699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6ECA21FB038700EA2699 /* AppDelegate.swift */; };
 		30BB6ECD21FB038800EA2699 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */; };
 		30BB6ED021FB038800EA2699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ECE21FB038800EA2699 /* Main.storyboard */; };
@@ -23,6 +24,10 @@
 		30BB6EFA21FB148300EA2699 /* Networtk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF921FB148300EA2699 /* Networtk.swift */; };
 		30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */; };
 		30BB6F0221FB1EF500EA2699 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0121FB1EF500EA2699 /* NetworkModel.swift */; };
+		30BB6F0621FB3D4400EA2699 /* ExerciseDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0521FB3D4400EA2699 /* ExerciseDetailTableViewController.swift */; };
+		30BB6F0821FB3F0500EA2699 /* ExerciseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0721FB3F0500EA2699 /* ExerciseDetailViewModel.swift */; };
+		30BB6F0C21FB430B00EA2699 /* ExerciseDetailImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0B21FB430B00EA2699 /* ExerciseDetailImagesTableViewCell.swift */; };
+		30BB6F0E21FB43F100EA2699 /* ExerciseDetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0D21FB43F100EA2699 /* ExerciseDetailImageCollectionViewCell.swift */; };
 		40A2DC10CB2380CF96BEB916 /* Pods_ExerciseShowCaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36CC58B3AB38F86C7128380 /* Pods_ExerciseShowCaseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		039CB55F0E762CE272544CF2 /* Pods-ExerciseShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExerciseShowCase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExerciseShowCase/Pods-ExerciseShowCase.release.xcconfig"; sourceTree = "<group>"; };
+		302D549121FB513B00A322FD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		30BB6EC721FB038700EA2699 /* ExerciseShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BB6ECA21FB038700EA2699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,10 @@
 		30BB6EF921FB148300EA2699 /* Networtk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networtk.swift; sourceTree = "<group>"; };
 		30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		30BB6F0121FB1EF500EA2699 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		30BB6F0521FB3D4400EA2699 /* ExerciseDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailTableViewController.swift; sourceTree = "<group>"; };
+		30BB6F0721FB3F0500EA2699 /* ExerciseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewModel.swift; sourceTree = "<group>"; };
+		30BB6F0B21FB430B00EA2699 /* ExerciseDetailImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailImagesTableViewCell.swift; sourceTree = "<group>"; };
+		30BB6F0D21FB43F100EA2699 /* ExerciseDetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		88E6229A98851D2496C4B405 /* Pods-ExerciseShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExerciseShowCase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExerciseShowCase/Pods-ExerciseShowCase.debug.xcconfig"; sourceTree = "<group>"; };
 		992E4B5B58597B72D2CA797D /* Pods-ExerciseShowCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExerciseShowCaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExerciseShowCaseTests/Pods-ExerciseShowCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EA207CDC43D5A8A3A4948A4 /* Pods_ExerciseShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExerciseShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,14 +128,14 @@
 		30BB6EC921FB038700EA2699 /* ExerciseShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				30BB6F0421FB3CCB00EA2699 /* ExerciseFlow */,
 				30BB6EF821FB145700EA2699 /* Network */,
-				30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */,
 				30BB6EEA21FB082F00EA2699 /* Model */,
 				30BB6ECA21FB038700EA2699 /* AppDelegate.swift */,
-				30BB6ECE21FB038800EA2699 /* Main.storyboard */,
 				30BB6ED121FB038900EA2699 /* Assets.xcassets */,
 				30BB6ED321FB038900EA2699 /* LaunchScreen.storyboard */,
 				30BB6ED621FB038900EA2699 /* Info.plist */,
+				302D549121FB513B00A322FD /* StringExtension.swift */,
 			);
 			path = ExerciseShowCase;
 			sourceTree = "<group>";
@@ -152,14 +162,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */ = {
+		30BB6EEB21FB083B00EA2699 /* ExerciseList */ = {
 			isa = PBXGroup;
 			children = (
 				30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */,
 				30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */,
 				30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */,
 			);
-			path = ExerciseListScreen;
+			path = ExerciseList;
 			sourceTree = "<group>";
 		};
 		30BB6EF821FB145700EA2699 /* Network */ = {
@@ -168,6 +178,27 @@
 				30BB6EF921FB148300EA2699 /* Networtk.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		30BB6F0321FB3CB400EA2699 /* ExerciseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				30BB6F0521FB3D4400EA2699 /* ExerciseDetailTableViewController.swift */,
+				30BB6F0721FB3F0500EA2699 /* ExerciseDetailViewModel.swift */,
+				30BB6F0B21FB430B00EA2699 /* ExerciseDetailImagesTableViewCell.swift */,
+				30BB6F0D21FB43F100EA2699 /* ExerciseDetailImageCollectionViewCell.swift */,
+			);
+			path = ExerciseDetail;
+			sourceTree = "<group>";
+		};
+		30BB6F0421FB3CCB00EA2699 /* ExerciseFlow */ = {
+			isa = PBXGroup;
+			children = (
+				30BB6EEB21FB083B00EA2699 /* ExerciseList */,
+				30BB6F0321FB3CB400EA2699 /* ExerciseDetail */,
+				30BB6ECE21FB038800EA2699 /* Main.storyboard */,
+			);
+			path = ExerciseFlow;
 			sourceTree = "<group>";
 		};
 		D72B76F5BF7EAB4F3FD23B46 /* Frameworks */ = {
@@ -346,10 +377,15 @@
 				30BB6ECD21FB038800EA2699 /* ExerciseListViewController.swift in Sources */,
 				30BB6F0221FB1EF500EA2699 /* NetworkModel.swift in Sources */,
 				30BB6EEF21FB08EC00EA2699 /* Exercise.swift in Sources */,
+				302D549221FB513B00A322FD /* StringExtension.swift in Sources */,
 				30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */,
+				30BB6F0821FB3F0500EA2699 /* ExerciseDetailViewModel.swift in Sources */,
 				30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */,
 				30BB6EFA21FB148300EA2699 /* Networtk.swift in Sources */,
 				30BB6ECB21FB038700EA2699 /* AppDelegate.swift in Sources */,
+				30BB6F0621FB3D4400EA2699 /* ExerciseDetailTableViewController.swift in Sources */,
+				30BB6F0E21FB43F100EA2699 /* ExerciseDetailImageCollectionViewCell.swift in Sources */,
+				30BB6F0C21FB430B00EA2699 /* ExerciseDetailImagesTableViewCell.swift in Sources */,
 				30BB6EED21FB08B300EA2699 /* ExerciseImage.swift in Sources */,
 				30BB6EF721FB0B6100EA2699 /* ExerciseListViewModel.swift in Sources */,
 				30BB6EF121FB094E00EA2699 /* Equipment.swift in Sources */,
