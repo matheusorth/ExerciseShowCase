@@ -13,7 +13,7 @@ class Network {
     typealias ResultBlock<T: Codable> = ((NetworkResult<T>) -> ())
     typealias ErrorBlock = ((Error?)->())
     
-    private static let baseURL = "https://wger.de/api/v2/"
+    static let baseURL = "https://wger.de/api/v2/"
     
     static func retrieveExercises(_ customUrl: String? = nil, resultBlock: @escaping ResultBlock<Exercise>, errorBlock: @escaping ErrorBlock) {
         let url = customUrl ?? (baseURL + Endpoint.exercise.rawValue + "/")
@@ -22,7 +22,7 @@ class Network {
     }
     
     static func retrieveCategories(resultBlock: @escaping ResultBlock<ExerciseCategory>, errorBlock: @escaping ErrorBlock) {
-        let url = baseURL + Endpoint.exercisecategory.rawValue
+        let url = baseURL + Endpoint.exercisecCategory.rawValue
         decodableAlamofireResponse(url, resultBlock, errorBlock)
     }
     
@@ -34,6 +34,12 @@ class Network {
     static func retrieveEquipament(resultBlock: @escaping ResultBlock<Equipment>, errorBlock: @escaping ErrorBlock) {
         let url = baseURL + Endpoint.equipment.rawValue
         decodableAlamofireResponse(url, resultBlock, errorBlock)
+    }
+    
+    static func retrieveExerciseImage(of exerciseId: Int, resultBlock: @escaping ResultBlock<ExerciseImage>, errorBlock: @escaping ErrorBlock) {
+        let url = baseURL + Endpoint.exerciseImage.rawValue
+        let parameters: Parameters = ["is_main": true, "exercise": exerciseId]
+        decodableAlamofireResponse(url, parameters: parameters, resultBlock, errorBlock)
     }
     
     private static func decodableAlamofireResponse<T: Codable>(_ url: String, parameters: Parameters? = nil, _ resultBlock: @escaping ResultBlock<T>, _ errorBlock: @escaping ErrorBlock) {
@@ -48,8 +54,10 @@ class Network {
         print(request)
     }
     
-    private enum Endpoint: String {
-        case exercise, muscle, exercisecategory, equipment
+    enum Endpoint: String {
+        case exercise, muscle, equipment
+        case exercisecCategory = "exercisecategory"
+        case exerciseImage = "exerciseimage"
     }
     
 }

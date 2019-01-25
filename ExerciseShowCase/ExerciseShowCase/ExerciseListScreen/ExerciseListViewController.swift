@@ -42,14 +42,13 @@ class ExerciseListViewController: UIViewController {
 extension ExerciseListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.exercises?.count ?? 0
+        return viewModel.exercisesViewModel?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "exercise", for: indexPath) as? ExerciseTableViewCell,
-        let exercise = viewModel.exercises?[indexPath.row] else { return UITableViewCell() }
-        cell.configure(with: exercise)
-    
+            let exerciseViewModel = viewModel.exercisesViewModel?[indexPath.row] else { return UITableViewCell() }
+        cell.viewModel = exerciseViewModel
         return cell
     }
 

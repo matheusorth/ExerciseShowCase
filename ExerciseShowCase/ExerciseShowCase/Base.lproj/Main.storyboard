@@ -30,7 +30,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tF9-K0-M2U">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercisePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="tF9-K0-M2U">
                                                     <rect key="frame" x="16" y="12" width="62" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="tF9-K0-M2U" secondAttribute="height" multiplier="62:50" id="4xC-GQ-64j"/>
@@ -49,14 +49,6 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="usb-XG-Ds7">
-                                                    <rect key="frame" x="339" y="27" width="20" height="20"/>
-                                                    <color key="tintColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="Hgt-6H-G1B"/>
-                                                        <constraint firstAttribute="height" constant="20" id="s0r-2r-SRQ"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3c-ZY-gXa">
                                                     <rect key="frame" x="100" y="74" width="175" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,7 +77,6 @@
                                                 <constraint firstItem="tF9-K0-M2U" firstAttribute="top" secondItem="Qbc-uJ-Pfw" secondAttribute="top" constant="12" id="ERR-od-G1v"/>
                                                 <constraint firstItem="Z3c-ZY-gXa" firstAttribute="top" secondItem="tF9-K0-M2U" secondAttribute="bottom" constant="12" id="EUy-kv-FZ4"/>
                                                 <constraint firstItem="GgK-gO-sGI" firstAttribute="bottom" secondItem="tF9-K0-M2U" secondAttribute="bottom" id="EY6-qB-GjG"/>
-                                                <constraint firstItem="usb-XG-Ds7" firstAttribute="centerY" secondItem="tF9-K0-M2U" secondAttribute="centerY" id="GBg-h6-U1F"/>
                                                 <constraint firstItem="j2F-pI-l4Z" firstAttribute="top" secondItem="LKj-WD-Eii" secondAttribute="bottom" constant="4" id="LK4-nE-oPs"/>
                                                 <constraint firstItem="Z3c-ZY-gXa" firstAttribute="leading" secondItem="Qbc-uJ-Pfw" secondAttribute="leading" constant="100" id="NVB-vL-scT"/>
                                                 <constraint firstItem="LKj-WD-Eii" firstAttribute="leading" secondItem="Qbc-uJ-Pfw" secondAttribute="leading" constant="16" id="Ohg-MN-TL9"/>
@@ -97,12 +88,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="dBm-v4-Jfg" secondAttribute="trailing" constant="54" id="j5B-QP-0Nc"/>
                                                 <constraint firstAttribute="bottom" secondItem="j2F-pI-l4Z" secondAttribute="bottom" constant="6" id="pnh-PB-IOM"/>
                                                 <constraint firstItem="LKj-WD-Eii" firstAttribute="top" secondItem="Z3c-ZY-gXa" secondAttribute="bottom" constant="8" id="w8h-1z-635"/>
-                                                <constraint firstAttribute="trailing" secondItem="usb-XG-Ds7" secondAttribute="trailing" constant="16" id="ytL-nd-uNK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="categoryLabel" destination="GgK-gO-sGI" id="XFw-Lf-Hos"/>
-                                            <outlet property="downArrowImageView" destination="usb-XG-Ds7" id="QIa-W6-5dB"/>
                                             <outlet property="equipmentsLabel" destination="j2F-pI-l4Z" id="tNX-86-RsV"/>
                                             <outlet property="exerciseImageView" destination="tF9-K0-M2U" id="Rec-yn-hnw"/>
                                             <outlet property="musclesLabel" destination="LKj-WD-Eii" id="kaK-rI-rju"/>
@@ -150,6 +139,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="downArrow" width="16" height="16"/>
+        <image name="exercisePlaceholder" width="174" height="174"/>
     </resources>
 </document>

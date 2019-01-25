@@ -12,12 +12,13 @@ class ExerciseListViewModel {
     
     struct ExerciseSimplefied {
         var name: String
-        var imagePath: String?
+        var id: Int
         var category: ExerciseCategory?
         var muscles, musclesSecondary: [Muscle]?
         var equipments: [Equipment]?
         
-        init(name: String) {
+        init(id: Int, name: String) {
+            self.id = id
             self.name = name
         }
     }
@@ -28,13 +29,13 @@ class ExerciseListViewModel {
     
     // MARK: - Reactive variables
     
-    private(set) var exercises: [ExerciseSimplefied]?{
+    private(set) var exercisesViewModel: [ExerciseTableViewCellViewModel]? {
         didSet {
             updatedExercises?()
         }
     }
     
-    private var resultExercises: NetworkResult<Exercise>?{
+    private var resultExercises: NetworkResult<Exercise>? {
         didSet {
             mapExercisesWithDetails()
         }
@@ -46,13 +47,13 @@ class ExerciseListViewModel {
         }
     }
     
-    private var equipments: [Equipment]?{
+    private var equipments: [Equipment]? {
         didSet {
             mapExercisesWithDetails()
         }
     }
     
-    private var categories: [ExerciseCategory]?{
+    private var categories: [ExerciseCategory]? {
         didSet {
             mapExercisesWithDetails()
         }
@@ -106,18 +107,17 @@ class ExerciseListViewModel {
         guard let categories = categories else { return }
         guard let equipments = equipments else { return }
         guard let exercises = resultExercises?.results else { return }
-        let newExercises: [ExerciseSimplefied] = exercises.map({ exercise in
-            var newExercise = ExerciseSimplefied(name: exercise.name)
+        let newExercisesViewModels: [ExerciseTableViewCellViewModel] = exercises.map({ exercise in
+            var newExercise = ExerciseSimplefied(id: exercise.id, name: exercise.name)
             newExercise.category = categories.filter({ $0.id == exercise.category }).first
             newExercise.equipments = equipments.filter({ exercise.equipmentIds.contains($0.id) })
             newExercise.muscles = muscles.filter({ exercise.musclesIds.contains($0.id) })
             newExercise.musclesSecondary = muscles.filter({ exercise.musclesSecondaryIds.contains($0.id) })
-            
-            return newExercise
+            return ExerciseTableViewCellViewModel(exercise: newExercise)
         })
         
-        if self.exercises?.append(contentsOf: newExercises) == nil {
-            self.exercises = newExercises
+        if self.exercisesViewModel?.append(contentsOf: newExercisesViewModels) == nil {
+            self.exercisesViewModel = newExercisesViewModels
         }
     }
     
