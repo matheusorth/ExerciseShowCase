@@ -13,6 +13,11 @@
 		30BB6ED221FB038900EA2699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ED121FB038900EA2699 /* Assets.xcassets */; };
 		30BB6ED521FB038900EA2699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ED321FB038900EA2699 /* LaunchScreen.storyboard */; };
 		30BB6EE021FB038900EA2699 /* ExerciseShowCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EDF21FB038900EA2699 /* ExerciseShowCaseTests.swift */; };
+		30BB6EED21FB08B300EA2699 /* ExerciseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EEC21FB08B300EA2699 /* ExerciseImage.swift */; };
+		30BB6EEF21FB08EC00EA2699 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EEE21FB08EC00EA2699 /* Exercise.swift */; };
+		30BB6EF121FB094E00EA2699 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF021FB094E00EA2699 /* Equipment.swift */; };
+		30BB6EF321FB09DA00EA2699 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF221FB09DA00EA2699 /* Muscle.swift */; };
+		30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		30BB6EDB21FB038900EA2699 /* ExerciseShowCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseShowCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BB6EDF21FB038900EA2699 /* ExerciseShowCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseShowCaseTests.swift; sourceTree = "<group>"; };
 		30BB6EE121FB038900EA2699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BB6EEC21FB08B300EA2699 /* ExerciseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImage.swift; sourceTree = "<group>"; };
+		30BB6EEE21FB08EC00EA2699 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		30BB6EF021FB094E00EA2699 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		30BB6EF221FB09DA00EA2699 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
+		30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,8 @@
 		30BB6EC921FB038700EA2699 /* ExerciseShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */,
+				30BB6EEA21FB082F00EA2699 /* Model */,
 				30BB6ECA21FB038700EA2699 /* AppDelegate.swift */,
 				30BB6ECC21FB038800EA2699 /* ViewController.swift */,
 				30BB6ECE21FB038800EA2699 /* Main.storyboard */,
@@ -94,6 +106,25 @@
 				30BB6EE121FB038900EA2699 /* Info.plist */,
 			);
 			path = ExerciseShowCaseTests;
+			sourceTree = "<group>";
+		};
+		30BB6EEA21FB082F00EA2699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30BB6EF021FB094E00EA2699 /* Equipment.swift */,
+				30BB6EEE21FB08EC00EA2699 /* Exercise.swift */,
+				30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */,
+				30BB6EEC21FB08B300EA2699 /* ExerciseImage.swift */,
+				30BB6EF221FB09DA00EA2699 /* Muscle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExerciseListScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BB6EF321FB09DA00EA2699 /* Muscle.swift in Sources */,
 				30BB6ECD21FB038800EA2699 /* ViewController.swift in Sources */,
+				30BB6EEF21FB08EC00EA2699 /* Exercise.swift in Sources */,
+				30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */,
 				30BB6ECB21FB038700EA2699 /* AppDelegate.swift in Sources */,
+				30BB6EED21FB08B300EA2699 /* ExerciseImage.swift in Sources */,
+				30BB6EF121FB094E00EA2699 /* Equipment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
