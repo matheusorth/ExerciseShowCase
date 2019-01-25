@@ -22,6 +22,7 @@
 		30BB6EF721FB0B6100EA2699 /* ExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */; };
 		30BB6EFA21FB148300EA2699 /* Networtk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF921FB148300EA2699 /* Networtk.swift */; };
 		30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */; };
+		30BB6F0221FB1EF500EA2699 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6F0121FB1EF500EA2699 /* NetworkModel.swift */; };
 		40A2DC10CB2380CF96BEB916 /* Pods_ExerciseShowCaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36CC58B3AB38F86C7128380 /* Pods_ExerciseShowCaseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
 		30BB6EF921FB148300EA2699 /* Networtk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networtk.swift; sourceTree = "<group>"; };
 		30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		30BB6F0121FB1EF500EA2699 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		88E6229A98851D2496C4B405 /* Pods-ExerciseShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExerciseShowCase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExerciseShowCase/Pods-ExerciseShowCase.debug.xcconfig"; sourceTree = "<group>"; };
 		992E4B5B58597B72D2CA797D /* Pods-ExerciseShowCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExerciseShowCaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExerciseShowCaseTests/Pods-ExerciseShowCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EA207CDC43D5A8A3A4948A4 /* Pods_ExerciseShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExerciseShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */,
 				30BB6EEC21FB08B300EA2699 /* ExerciseImage.swift */,
 				30BB6EF221FB09DA00EA2699 /* Muscle.swift */,
+				30BB6F0121FB1EF500EA2699 /* NetworkModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				30BB6EF321FB09DA00EA2699 /* Muscle.swift in Sources */,
 				30BB6ECD21FB038800EA2699 /* ExerciseListViewController.swift in Sources */,
+				30BB6F0221FB1EF500EA2699 /* NetworkModel.swift in Sources */,
 				30BB6EEF21FB08EC00EA2699 /* Exercise.swift in Sources */,
 				30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */,
 				30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */,
@@ -514,7 +518,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4G75M4SAX;
 				INFOPLIST_FILE = ExerciseShowCase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = collab.com.ExerciseShowCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -530,7 +537,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4G75M4SAX;
 				INFOPLIST_FILE = ExerciseShowCase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = collab.com.ExerciseShowCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -547,7 +557,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4G75M4SAX;
 				INFOPLIST_FILE = ExerciseShowCaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = collab.com.ExerciseShowCaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -565,7 +579,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4G75M4SAX;
 				INFOPLIST_FILE = ExerciseShowCaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = collab.com.ExerciseShowCaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
