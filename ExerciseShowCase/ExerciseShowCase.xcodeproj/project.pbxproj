@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30BB6ECB21FB038700EA2699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6ECA21FB038700EA2699 /* AppDelegate.swift */; };
-		30BB6ECD21FB038800EA2699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6ECC21FB038800EA2699 /* ViewController.swift */; };
+		30BB6ECD21FB038800EA2699 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */; };
 		30BB6ED021FB038800EA2699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ECE21FB038800EA2699 /* Main.storyboard */; };
 		30BB6ED221FB038900EA2699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ED121FB038900EA2699 /* Assets.xcassets */; };
 		30BB6ED521FB038900EA2699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BB6ED321FB038900EA2699 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,9 @@
 		30BB6EF121FB094E00EA2699 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF021FB094E00EA2699 /* Equipment.swift */; };
 		30BB6EF321FB09DA00EA2699 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF221FB09DA00EA2699 /* Muscle.swift */; };
 		30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */; };
+		30BB6EF721FB0B6100EA2699 /* ExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */; };
+		30BB6EFA21FB148300EA2699 /* Networtk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EF921FB148300EA2699 /* Networtk.swift */; };
+		30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,7 @@
 /* Begin PBXFileReference section */
 		30BB6EC721FB038700EA2699 /* ExerciseShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BB6ECA21FB038700EA2699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30BB6ECC21FB038800EA2699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
 		30BB6ECF21FB038800EA2699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30BB6ED121FB038900EA2699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30BB6ED421FB038900EA2699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +49,9 @@
 		30BB6EF021FB094E00EA2699 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		30BB6EF221FB09DA00EA2699 /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		30BB6EF421FB09F500EA2699 /* ExerciseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCategory.swift; sourceTree = "<group>"; };
+		30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
+		30BB6EF921FB148300EA2699 /* Networtk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networtk.swift; sourceTree = "<group>"; };
+		30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +93,10 @@
 		30BB6EC921FB038700EA2699 /* ExerciseShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				30BB6EF821FB145700EA2699 /* Network */,
 				30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */,
 				30BB6EEA21FB082F00EA2699 /* Model */,
 				30BB6ECA21FB038700EA2699 /* AppDelegate.swift */,
-				30BB6ECC21FB038800EA2699 /* ViewController.swift */,
 				30BB6ECE21FB038800EA2699 /* Main.storyboard */,
 				30BB6ED121FB038900EA2699 /* Assets.xcassets */,
 				30BB6ED321FB038900EA2699 /* LaunchScreen.storyboard */,
@@ -123,8 +129,19 @@
 		30BB6EEB21FB083B00EA2699 /* ExerciseListScreen */ = {
 			isa = PBXGroup;
 			children = (
+				30BB6ECC21FB038800EA2699 /* ExerciseListViewController.swift */,
+				30BB6EF621FB0B6100EA2699 /* ExerciseListViewModel.swift */,
+				30BB6EFF21FB190700EA2699 /* ExerciseTableViewCell.swift */,
 			);
 			path = ExerciseListScreen;
+			sourceTree = "<group>";
+		};
+		30BB6EF821FB145700EA2699 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30BB6EF921FB148300EA2699 /* Networtk.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,11 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				30BB6EF321FB09DA00EA2699 /* Muscle.swift in Sources */,
-				30BB6ECD21FB038800EA2699 /* ViewController.swift in Sources */,
+				30BB6ECD21FB038800EA2699 /* ExerciseListViewController.swift in Sources */,
 				30BB6EEF21FB08EC00EA2699 /* Exercise.swift in Sources */,
 				30BB6EF521FB09F500EA2699 /* ExerciseCategory.swift in Sources */,
+				30BB6F0021FB190700EA2699 /* ExerciseTableViewCell.swift in Sources */,
+				30BB6EFA21FB148300EA2699 /* Networtk.swift in Sources */,
 				30BB6ECB21FB038700EA2699 /* AppDelegate.swift in Sources */,
 				30BB6EED21FB08B300EA2699 /* ExerciseImage.swift in Sources */,
+				30BB6EF721FB0B6100EA2699 /* ExerciseListViewModel.swift in Sources */,
 				30BB6EF121FB094E00EA2699 /* Equipment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

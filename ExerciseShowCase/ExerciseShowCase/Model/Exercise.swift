@@ -9,10 +9,11 @@
 import Foundation
 
 struct Exercise: Codable {
+    
     let id: Int
     let licenseAuthor, status, description, name: String
     let nameOriginal, creationDate, uuid: String
-    let license, category, language: Int
+    let license, language, category: Int
     let musclesIds, musclesSecondaryIds, equipmentIds: [Int]
     
     enum CodingKeys: String, CodingKey {
